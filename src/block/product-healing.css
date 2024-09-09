@@ -1,0 +1,70 @@
+.product-healing {
+    padding-top: 120px;
+    padding-bottom: clamp(1.875rem, 0.979rem + 3.774vw, 4.375rem);
+    background-color: var(--dark-blue);
+}
+
+.product-healing__title {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: clamp(11.25rem, -4.107rem + 31.994vw, 24.688rem);
+    line-height: 0.8;
+    text-transform: uppercase;
+    color: #596476;
+    display: inline-block;
+}
+
+.product-healing__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.product-healing__img {
+    width: clamp(12.688rem, 5.259rem + 15.476vw, 19.188rem);
+    height: clamp(8.25rem, -2.321rem + 22.024vw, 17.5rem);
+    object-fit: cover;
+}
+
+.product-healing__text {
+    font-family: "Involve", sans-serif;
+    font-weight: 600;
+    font-size: clamp(0.875rem, 0.161rem + 1.488vw, 1.5rem);
+    text-align: justify;
+    color: #fff;
+    max-width: 470px;
+    padding-left: 30px;
+}
+
+.product-healing__text.product-healing__text {
+    margin-bottom: 20px;
+}
+
+.product-healing__inner--mobile {
+    display: none;
+}
+
+@media(max-width: 750px) {
+    .product-healing__inner--desktop {
+        display: none;
+    }
+
+    .product-healing__inner--mobile {
+        display: block;
+    }
+
+    .product-healing__title {
+        font-size: clamp(5.625rem, 0.102rem + 23.256vw, 11.25rem);
+        margin-bottom: 30px;
+    }
+
+    .product-healing__img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .product-healing__text {
+        padding-left: 0;
+    }
+}

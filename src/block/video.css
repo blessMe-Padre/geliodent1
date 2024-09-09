@@ -1,0 +1,34 @@
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.section.video-about {
+    position: relative;
+    /* height: 910px; */
+}
+
+.video-about__video {
+    position: absolute;
+    object-fit: contain;
+    aspect-ratio: 16/9;
+
+    width: 100%;
+    height: 100%;
+}
+
+.video-about__play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.video-about__play-btn:hover {
+    transform: scale(1.1);
+}

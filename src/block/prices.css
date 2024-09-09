@@ -1,0 +1,127 @@
+.prices {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    background-color: var(--dark-blue);
+
+}
+
+.prices__title {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: clamp(8.125rem, -1.187rem + 19.374vw, 16.25rem);
+    line-height: 0.8;
+    text-transform: uppercase;
+    color: #596476;
+    position: relative;
+    z-index: 1;
+}
+
+._tabs-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    will-change: max-height;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+._tabs-content._active {
+    opacity: 1;
+}
+
+.prices__btn {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: clamp(2.5rem, -0.079rem + 5.365vw, 4.75rem);
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prices__btn--fs-small {
+    font-size: clamp(2.5rem, -0.007rem + 5.216vw, 4.688rem);
+}
+
+.prices__list {
+    position: relative;
+    z-index: 1;
+
+    margin-top: 80px;
+}
+
+.prices__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.prices__item {
+    padding: 40px 0;
+    transition: opacity 0.3s ease;
+}
+
+.prices__item.is-active {
+    opacity: 1;
+}
+
+.price__name {
+    font-family: "Involve", sans-serif;
+    font-weight: 600;
+    font-size: clamp(1.125rem, 0.265rem + 1.788vw, 1.875rem);
+    line-height: 1;
+    color: #c8d0dd;
+}
+
+.price__cost {
+    font-family: "Involve", sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.125rem, 0.265rem + 1.788vw, 1.875rem);
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media (max-width: 1023px) {
+    .prices__list {
+        margin-top: 50px;
+    }
+
+    .prices__item {
+        padding: 20px 0;
+    }
+
+    .prices__btn {
+        text-align: left;
+    }
+
+    .prices__btn svg {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 620px) {
+    .prices__title {
+        font-size: 90px;
+    }
+
+    .prices__btn {
+        font-size: 30px;
+    }
+
+    .price__name,
+    .price__cost {
+        font-size: 14px;
+    }
+
+    .price__cost {
+        max-width: 56px;
+    }
+}

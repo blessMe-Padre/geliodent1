@@ -1,0 +1,57 @@
+.healing-video {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    background-color: var(--dark-blue);
+
+    background-image: url('../src/img/bg/bg-vidoe-section.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.healing-video__title {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    line-height: 0.8;
+    text-transform: uppercase;
+    color: #596476;
+    font-size: clamp(9.375rem, -1.339rem + 22.321vw, 18.75rem);
+    margin-bottom: 30px;
+}
+
+.healing-video__wrapper {
+    height: 536px;
+}
+
+.healing-video__wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.healing-video__text {
+    font-family: "Involve", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+
+    max-width: 928px;
+    margin: 50px auto;
+}
+
+@media (max-width: 767px) {
+    .healing-video__title {
+        font-size: 70px;
+    }
+
+    .healing-video__wrapper {
+        height: 300px;
+    }
+
+    .healing-video__text {
+        font-size: 14px;
+        text-align: justify;
+        color: #fff;
+    }
+
+}

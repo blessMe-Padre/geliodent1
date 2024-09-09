@@ -1,0 +1,95 @@
+.product-hero-4 {
+    padding-top: 130px;
+    padding-bottom: 50px;
+    background-color: var(--dark-blue);
+}
+
+.product-hero-4__title {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: clamp(6.875rem, -3.125rem + 20.833vw, 15.625rem);
+    line-height: 0.8;
+    text-transform: uppercase;
+    color: #596476;
+}
+
+.product-hero-4__wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+}
+
+.product-hero-4__description {
+    font-family: "Involve", sans-serif;
+    font-weight: 600;
+    font-size: clamp(0.75rem, 0.179rem + 1.19vw, 1.25rem);
+    line-height: 1.4;
+    text-align: justify;
+    color: #fff;
+}
+
+.product-hero-4__description--narkos {
+    max-width: 470px;
+    margin-top: 50px;
+}
+
+.product-hero-4__img-2 {
+    display: none;
+}
+
+@media (max-width: 1140px) {
+    .product-hero-4__description {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-hero-4__description {
+        font-size: 12px;
+    }
+
+    .product-hero-4__wrapper {
+        margin-top: 30px;
+    }
+
+    .product-hero-4__title {
+        line-height: 0.9;
+    }
+
+    .product-hero-4__wrapper {
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .product-hero-4 {
+        padding-top: 70px;
+    }
+
+    .product-hero-4__title {
+        font-size: 70px;
+        margin-bottom: 30px;
+    }
+
+    .product-hero-4__wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .product-hero-4__title--small {
+        font-size: 40px;
+    }
+
+    .product-hero-4__img-1 {
+        display: none;
+    }
+
+    .product-hero-4__img-2 {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .product-hero-4__description {
+        margin-top: 20px;
+    }
+}

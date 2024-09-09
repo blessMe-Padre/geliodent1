@@ -1,0 +1,19 @@
+.title {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: clamp(3.125rem, -1.875rem + 10.417vw, 7.5rem);
+    line-height: 1;
+    color: #fff;
+
+    margin-bottom: 30px;
+}
+
+.title span {
+    color: #596476;
+}
+
+@media (max-width: 767px) {
+    .title {
+        font-size: clamp(1.875rem, 0.651rem + 5.155vw, 3.125rem);
+    }
+}

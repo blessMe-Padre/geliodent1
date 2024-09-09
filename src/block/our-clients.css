@@ -1,0 +1,160 @@
+.our-clients {
+    padding-top: clamp(1.875rem, 0.979rem + 3.774vw, 4.375rem);
+    padding-bottom: clamp(1.875rem, 0.979rem + 3.774vw, 4.375rem);
+    background-color: var(--dark-blue);
+    position: relative;
+}
+
+.our-clients__decor {
+    position: absolute;
+}
+
+.our-clients__wrapper {
+    overflow: hidden;
+}
+
+.our-clients__wrapper-about {
+    overflow: hidden;
+}
+
+.our-clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: column;
+    max-height: 92vh;
+
+    transform: translateX(1%);
+    transition: transform 0.3s linear;
+}
+
+.our-clients__list li {
+    height: 42vh;
+    max-width: 243px;
+    position: relative;
+    z-index: 1;
+}
+
+.our-clients__list li::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.our-clients__item-title {
+    position: absolute;
+    bottom: 40px;
+    left: 20%;
+    font-family: "Involve", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.our-clients__item-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.our-clients-item-mask .our-clients__item-title {
+    opacity: 1;
+    visibility: visible;
+}
+
+.our-clients-item-mask .our-clients__item-img {
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+}
+
+.our-clients__bg-image {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    z-index: -1;
+}
+
+/* Стили текстовых отзывов */
+.our-clients--text .our-clients-item-mask {
+    padding: 20px;
+    background-color: #fff;
+
+    height: 42vh;
+    max-width: 345px;
+}
+
+.reviews-image {
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+.reviews-name {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 40px;
+    color: #c8d0dd;
+    margin-bottom: 5px;
+}
+
+.reviews-text {
+    font-family: "Involve", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #091c3b;
+
+    -webkit-line-clamp: 7;
+    line-clamp: 7;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden
+}
+
+@media (max-width:768px) {
+    .our-clients--text .our-clients-item-mask {
+        max-width: 200px;
+    }
+
+    .our-clients--text .reviews-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .our-clients--text .reviews-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .reviews-text {
+
+        -webkit-line-clamp: inherit;
+        line-clamp: inherit;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden
+    }
+}
+
+@media (max-width:420px) {
+    .our-clients--text .our-clients-item-mask {
+        padding: 20px;
+        background-color: #fff;
+
+        height: 42vh;
+    }
+}

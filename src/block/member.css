@@ -1,0 +1,103 @@
+.member {
+    padding-top: clamp(1.875rem, 0.979rem + 3.774vw, 4.375rem);
+    padding-bottom: clamp(1.875rem, 0.979rem + 3.774vw, 4.375rem);
+    background-color: var(--dark-blue);
+    background-image: url('../src/img/bg-space.webp');
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.member__title {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: clamp(7.5rem, -1.071rem + 17.857vw, 15rem);
+    line-height: 1;
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+.member__link {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.125rem, 0.268rem + 1.786vw, 1.875rem);
+    text-align: center;
+    color: #091c3b;
+
+    background: #fff;
+    border-radius: 30px;
+    display: block;
+    padding: 10px 0;
+}
+
+.member__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 60px;
+}
+
+.member__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.member__item:nth-child(5) {
+    grid-column: 3/4;
+}
+
+.member__item .image-wrapper {
+    margin-bottom: 30px;
+}
+
+.member__item p {
+    font-family: "Involve", sans-serif;
+    font-weight: 600;
+    font-size: clamp(0.75rem, 0.179rem + 1.19vw, 1.25rem);
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.member-bg-img {
+    position: absolute;
+    bottom: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.2;
+    width: 100%;
+}
+
+@media (max-width: 1023px) {
+    .member__item .image-wrapper {
+        margin-bottom: 15px;
+    }
+
+    .member__item p {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width:650px) {
+    .member__item .image-wrapper {
+        margin-bottom: 15px;
+    }
+
+    .member__item p {
+        margin-bottom: 15px;
+    }
+
+    .member__title {
+        font-size: 100px;
+    }
+}
+
+@media (max-width:550px) {
+    .member__list {
+        grid-template-columns: 1fr;
+    }
+
+    .member__item:nth-child(5) {
+        grid-column: auto;
+    }
+}

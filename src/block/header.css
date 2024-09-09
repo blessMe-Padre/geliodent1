@@ -1,0 +1,39 @@
+.header {}
+
+.header__logo {}
+
+.header__link {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: clamp(0.875rem, 0.445rem + 0.894vw, 1.25rem);
+    color: #fff;
+}
+
+.header__link--mobile {
+    display: block;
+}
+
+@media (max-width: 820px) {
+    .header__logo {
+        width: 115px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 760px) {
+    .header__link {
+        display: none;
+    }
+
+    .header__li {
+        display: none;
+    }
+
+    .header__link--mobile {
+        display: block;
+    }
+
+    .header.is-active {
+        background-color: var(--dark-blue);
+    }
+}

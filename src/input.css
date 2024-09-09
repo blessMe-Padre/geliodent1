@@ -1,0 +1,331 @@
+/* Импорт шрифтов */
+
+/* Импорт кастомных стилей для компонентов */
+@import './block/menu-button.css';
+@import './block/menu.css';
+@import './block/swiper.css';
+@import './block/sliders.css';
+@import './block/scrool-top.css';
+@import './block/preloader.css';
+@import './block/animations.css';
+@import './block/hero.css';
+@import './block/table.css';
+@import './block/info.css';
+@import './block/services-view.css';
+@import './block/card.css';
+@import './block/news-section.css';
+@import './block/buttons.css';
+@import './block/solution.css';
+@import './block/footer.css';
+@import './block/menu-window.css';
+@import './block/header.css';
+@import './block/popup.css';
+@import './block/product-healing.css';
+@import './block/our-clients.css';
+@import './block/title.css';
+@import './block/video.css';
+@import './block/time.css';
+@import './block/how.css';
+@import './block/product-hero-2.css';
+@import './block/product-hero-3.css';
+@import './block/product-hero-4.css';
+@import './block/views.css';
+@import './block/healing-video.css';
+@import './block/prices.css';
+@import './block/calculate.css';
+@import './block/our-work.css';
+@import './block/faq.css';
+@import './block/for-clients.css';
+@import './block/visit.css';
+@import './block/member.css';
+@import './block/careful.css';
+@import './block/contact.css';
+@import './block/about.css';
+
+
+/* Импорт TailWind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Зарегистрируйте пользовательское семейство шрифтов и сообщите браузеру, где его найти. */
+/* @font-face {
+    font-family: 'archangelsk';
+    src: url('../src/fonts/archangelsk.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} */
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../src/fonts/BebasNeueBold.woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../src/fonts/BebasNeueRegular.woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('../src/fonts/Involve-Regular.woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('../src/fonts/Involve-Medium.woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('../src/fonts/Involve-SemiBold.woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('../src/fonts/Involve-Bold.woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Bebas Neue', sans-serif;
+        color: #262626;
+        font-weight: 400;
+    }
+}
+
+@layer components {
+    .container {
+        @apply max-w-[1480px]
+    }
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+    /* Ширина всего элемента навигации */
+}
+
+body::-webkit-scrollbar-track {
+    background: #152033;
+    /* Цвет дорожки */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #152033;
+    /* Цвет бегунка */
+    border-radius: 20px;
+    /* Округление бегунка */
+    border: 3px solid #152033;
+    /* Оформление границ бегунка */
+}
+
+/* Переменные */
+
+:root {
+    --white: #ffffff;
+    --default-black: #363232;
+    --dark-blue: #152033;
+    --blue: #192436;
+}
+
+/* Прочие классы */
+.lock {
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.bg-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+    /* background-color: var(--dark-blue); */
+    background-color: #152033;
+}
+
+.bg-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    /* background-color: var(--dark-blue); */
+    color: #ffffff;
+    position: relative;
+    background: transparent;
+}
+
+.section--dark-blue {
+    background-color: var(--dark-blue);
+}
+
+.image-wrapper {
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    transition: transform 0.3s linear;
+}
+
+.image-wrapper img:hover {
+    transform: scale(1.1);
+}
+
+.section-info {
+    padding-top: 50px;
+    background-color: var(--dark-blue);
+}
+
+.product-main-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.custom-border-top {
+    position: relative;
+}
+
+.custom-border-top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: aqua;
+    background: #ffffff;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.custom-border-top::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 4px);
+    height: 8px;
+    background: #152033;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.space-background {
+    background-color: var(--dark-blue);
+    background-image: url('../src/img/bg-space.webp');
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.space-tooth-background {
+    background-color: var(--dark-blue);
+    background-image: url('../src/img/bg.webp');
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.container-lg {
+    max-width: 1960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.link {
+    transition: color 0.5s ease;
+}
+
+.link:hover {
+    color: #596476;
+}
+
+
+/* Удалить все что ниже */
+
+.scroll_box {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.scroll_swipper {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    transition-property: top;
+    transition-duration: 1s;
+}
+
+.main-swiper {
+    height: 100vh;
+    background-color: var(--dark-blue);
+    background-image: url('../src/img/main-bg.png');
+}
+
+.absolute-title {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    font-size: 180px;
+}
+
+.shadow-filter-1 {
+    /* background: rgba(21, 32, 51, 0.9); */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+}
+
+.section-placeholder {
+    height: 100vh;
+    background-color: var(--dark-blue);
+    color: #ffffff;
+    font-size: 30px;
+    max-width: 1440px;
+    margin: 0 auto;
+}

@@ -1,0 +1,174 @@
+.services-view {
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.services-view__title {
+    font-family: "Involve", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #6f7d94;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.services-view__list {
+    max-width: 1340px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.services-view__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    /* font-size: 80px; */
+    font-size: clamp(2.25rem, -0.893rem + 6.548vw, 5rem);
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.services-view__link img {
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.services-view__link:hover img {
+    opacity: 1;
+}
+
+.opacity-06 {
+    opacity: 0.6;
+}
+
+.opacity-04 {
+    opacity: 0.4;
+}
+
+.opacity-02 {
+    opacity: 0.2;
+}
+
+.opacity-01 {
+    opacity: 0.1;
+}
+
+.opacity-015 {
+    opacity: 0.15;
+}
+
+.opacity-008 {
+    opacity: 0.08;
+}
+
+.opacity-005 {
+    opacity: 0.05;
+}
+
+.services-view__img-1 {
+    position: absolute;
+    top: 0;
+    left: 130px;
+}
+
+.services-view__img-2 {
+    position: absolute;
+    top: 210px;
+    left: 0;
+}
+
+.services-view__img-3 {
+    position: absolute;
+    top: 0;
+    right: 130px;
+}
+
+.services-view__img-4 {
+    position: absolute;
+    top: 210px;
+    right: 0;
+}
+
+@media (max-width:1154px) {
+    .services-view__img-1 {
+        left: 50px;
+        width: 150px;
+    }
+
+    .services-view__img-2 {
+        width: 150px;
+    }
+
+    .services-view__img-3 {
+        right: 50px;
+        width: 150px;
+    }
+
+    .services-view__img-4 {
+        width: 150px;
+    }
+}
+
+@media (max-width:920px) {
+    .services-view__list {
+        margin-left: 50px;
+    }
+
+    .services-view__link img {
+        width: 35px;
+        height: 21px;
+    }
+
+    .services-view__img-1,
+    .services-view__img-2,
+    .services-view__img-3,
+    .services-view__img-4 {
+        width: 108px;
+        height: 94px;
+    }
+
+    .services-view__img-2 {
+        top: 160px;
+    }
+
+    .services-view__img-4 {
+        top: 160px;
+    }
+
+    .services-view__img-4 {}
+
+    .services-view__img-1 {
+        top: 50px;
+    }
+
+    .services-view__img-3 {
+        top: 50px;
+    }
+}
+
+@media (max-width:550px) {
+
+    .services-view__img-2,
+    .services-view__img-4 {
+        display: none;
+    }
+
+    .services-view__img-1 {
+        left: 20px;
+        width: 74px;
+        height: 74px;
+        top: 80px;
+    }
+
+    .services-view__img-3 {
+        right: 20px;
+        width: 74px;
+        height: 74px;
+        top: 80px;
+    }
+}

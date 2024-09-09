@@ -1,0 +1,148 @@
+.time {
+    padding-top: clamp(1.875rem, 0.979rem + 3.774vw, 4.375rem);
+    padding-bottom: clamp(1.875rem, 0.979rem + 3.774vw, 4.375rem);
+    background-color: var(--dark-blue);
+    background-image: url('../src/img/bg/time-bg.webp');
+    background-repeat: no-repeat;
+}
+
+.time__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.time__item {
+    padding: 40px 30px;
+    border: 1px solid #fff;
+}
+
+.time__item h3,
+.time__subtitle-1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 40px;
+}
+
+.time__item p {
+    font-family: "Involve", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+}
+
+.time__img {
+    height: 624px;
+    background-image: url('../src/img/bg/time-bg-2.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.time__img--bg-braket {
+    background-image: url('../src/img/bg/time-bg-4.webp');
+}
+
+.time__img--bg-vinir {
+    background-image: url('../src/img/bg/time-bg-5.webp');
+}
+
+.time__img--otbelivanie {
+    background-image: url('../src/img/bg/time-bg-6.webp');
+}
+
+.time__item--bottom {
+    margin-top: auto;
+}
+
+@media (max-width: 1023px) {
+    .time__item h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .time__item p {
+        font-size: 12px;
+    }
+
+    .time__img {
+        height: 430px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .time__img {
+        height: 315px;
+    }
+
+    .time__item {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .time__wrapper {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .time__item h3 {
+        margin-bottom: 30px;
+    }
+
+    .time__item {
+        padding: 30px 20px;
+    }
+}
+
+
+/* страница продукта */
+
+.time__block {}
+
+.time__subtitle {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: clamp(3.75rem, -0.548rem + 8.942vw, 7.5rem);
+    line-height: 1;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.time__block-description {
+    font-family: "Involve", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #fff;
+}
+
+@media (max-width: 1023px) {
+    .time__img--auto {
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .time__block-description {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .time__img--auto {
+        height: 202px;
+    }
+
+    .time__block {
+        padding: 30px 20px;
+    }
+
+    .time__subtitle {
+        margin-bottom: 10px;
+    }
+}
