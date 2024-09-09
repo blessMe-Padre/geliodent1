@@ -2,91 +2,132 @@
 
 /* Импорт кастомных стилей для компонентов */
 
-.btn-close-menu {
-  --color: #ffffff;
-  width: 80px;
-  height: 36px;
-  padding: 0;
-  margin: 0;
-  /* outline: none; */
-  position: relative;
-  border: none;
-  background: none;
-  cursor: pointer;
-  -webkit-appearence: none;
-  -webkit-tap-highlight-color: transparent;
-  text-align: right;
-  z-index: 1;
+/* .btn-close-menu {
+    --color: #ffffff;
+    width: 80px;
+    height: 36px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    border: none;
+    background: none;
+    cursor: pointer;
+    -webkit-appearence: none;
+    -webkit-tap-highlight-color: transparent;
+    text-align: right;
+    z-index: 1;
 }
 
 .btn-close-menu svg {
-  width: 64px;
-  height: 48px;
-  top: -6px;
-  left: -14px;
-  stroke: var(--color);
-  stroke-width: 4px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  fill: none;
-  display: block;
-  position: absolute;
+    width: 64px;
+    height: 48px;
+    top: -6px;
+    left: -14px;
+    stroke: var(--color);
+    stroke-width: 4px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+    display: block;
+    position: absolute;
 }
 
 .btn-close-menu svg path {
-  transition: stroke-dasharray var(--duration, 0.85s) var(--easing, ease) var(--delay, 0s), stroke-dashoffset var(--duration, 0.85s) var(--easing, ease) var(--delay, 0s);
-  stroke-dasharray: var(--array-1, 26px) var(--array-2, 100px);
-  stroke-dashoffset: var(--offset, 126px);
-  transform: translateZ(0);
+    transition: stroke-dasharray var(--duration, 0.85s) var(--easing, ease) var(--delay, 0s), stroke-dashoffset var(--duration, 0.85s) var(--easing, ease) var(--delay, 0s);
+    stroke-dasharray: var(--array-1, 26px) var(--array-2, 100px);
+    stroke-dashoffset: var(--offset, 126px);
+    transform: translateZ(0);
 }
 
 .btn-close-menu svg path:nth-child(2) {
-  --duration: 0.7s;
-  --easing: ease-in;
-  --offset: 100px;
-  --array-2: 74px;
+    --duration: 0.7s;
+    --easing: ease-in;
+    --offset: 100px;
+    --array-2: 74px;
 }
 
 .btn-close-menu svg path:nth-child(3) {
-  --offset: 133px;
-  --array-2: 107px;
+    --offset: 133px;
+    --array-2: 107px;
 }
 
 .btn-close-menu.active svg path {
-  --offset: 57px;
+    --offset: 57px;
 }
 
 .btn-close-menu.active svg path:nth-child(1),
 .btn-close-menu.active svg path:nth-child(3) {
-  --delay: 0.15s;
-  --easing: cubic-bezier(0.2, 0.4, 0.2, 1.1);
+    --delay: 0.15s;
+    --easing: cubic-bezier(0.2, 0.4, 0.2, 1.1);
 }
 
 .btn-close-menu.active svg path:nth-child(2) {
-  --duration: 0.4s;
-  --offset: 2px;
-  --array-1: 1px;
+    --duration: 0.4s;
+    --offset: 2px;
+    --array-1: 1px;
+}
+*/
+
+.btn-close-menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
 }
 
-.btn-close-menu.active svg path:nth-child(3) {
-  --offset: 58px;
+.btn-decor-span {
+  display: block;
+  background-color: #fff;
+  height: 2px;
+  width: 27px;
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
 }
 
-.btn-close-menu span {
+.btn-decor-span-1 {
+  width: 21px;
+}
+
+.btn-decor-span-3 {
+  width: 12px;
+}
+
+.btn-decor-span:nth-child(3) {
+  margin-bottom: 0;
+  position: relative;
+}
+
+.btn-close-menu:hover .btn-decor-span{
+  width: 27px;
+}
+
+.btn-close-menu .btn-close-menu__text-span {
   opacity: 1;
   transition: opacity 0.3s linear;
 }
 
-.btn-close-menu.active span {
+.btn-close-menu.active .btn-close-menu__text-span {
   opacity: 0;
 }
 
-@media (max-width: 760px) {
-  .btn-close-menu {
-    /* width: 140px; */
-  }
+.btn-close-menu.active .btn-decor-span-3{
+  opacity: 0;
+}
 
-  .btn-close-menu span {
+.btn-close-menu.active .btn-decor-span-1{
+  transform: rotate(45deg);
+  width: 27px;
+  position: relative;
+  top: 7px;
+}
+
+.btn-close-menu.active .btn-decor-span-2{
+  transform: rotate(-45deg);
+  width: 27px;
+}
+
+@media (max-width: 760px) {
+  .btn-close-menu .btn-close-menu__text-span {
     display: none;
   }
 }
@@ -5644,7 +5685,7 @@ body::-webkit-scrollbar-thumb {
 
 .shadow-filter-1 {
   /* background: rgba(21, 32, 51, 0.9); */
-  box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+  /* box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23); */
 }
 
 .section-placeholder {

@@ -11,7 +11,7 @@ export const initAnimation = () => {
     const section10 = document.querySelector('.section-10');
     const section11 = document.querySelector('.section-11');
 
-    // Экраны 
+    // Экраны
     const sectionAboutScreen1 = document.querySelector('.about-screen-1');
     const sectionAboutScreen2 = document.querySelector('.about-screen-2');
     const sectionAboutScreen3 = document.querySelector('.about-screen-3');
@@ -83,7 +83,7 @@ export const initAnimation = () => {
             color: "#ffffff",
         }, "start") // Начало анимации
             .to(".info__img", {
-                y: -80,
+                y: -180,
                 scale: 1.4,
             }, "start") // Начало анимации
             .to(".info-wrapper", {

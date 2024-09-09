@@ -1,10 +1,9 @@
-.btn-close-menu {
+/* .btn-close-menu {
     --color: #ffffff;
     width: 80px;
     height: 36px;
     padding: 0;
     margin: 0;
-    /* outline: none; */
     position: relative;
     border: none;
     background: none;
@@ -63,26 +62,64 @@
     --offset: 2px;
     --array-1: 1px;
 }
+*/
 
-.btn-close-menu.active svg path:nth-child(3) {
-    --offset: 58px;
+.btn-close-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 2;
 }
 
-.btn-close-menu span {
+.btn-decor-span {
+    display: block;
+    background-color: #fff;
+    height: 2px;
+    width: 27px;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+    }
+
+.btn-decor-span-1 {width: 21px;}
+.btn-decor-span-3 {width: 12px;}
+
+.btn-decor-span:nth-child(3) {
+    margin-bottom: 0;
+    position: relative;
+}
+
+.btn-close-menu:hover .btn-decor-span{
+    width: 27px;
+}
+
+.btn-close-menu .btn-close-menu__text-span {
     opacity: 1;
     transition: opacity 0.3s linear;
 }
 
-.btn-close-menu.active span {
+.btn-close-menu.active .btn-close-menu__text-span {
     opacity: 0;
 }
 
-@media (max-width: 760px) {
-    .btn-close-menu {
-        /* width: 140px; */
-    }
 
-    .btn-close-menu span {
+.btn-close-menu.active .btn-decor-span-3{
+    opacity: 0;
+}
+
+.btn-close-menu.active .btn-decor-span-1{
+    transform: rotate(45deg);
+    width: 27px;
+    position: relative;
+    top: 7px;
+}
+.btn-close-menu.active .btn-decor-span-2{
+    transform: rotate(-45deg);
+    width: 27px;
+}
+
+
+@media (max-width: 760px) {
+    .btn-close-menu .btn-close-menu__text-span {
         display: none;
     }
 }
