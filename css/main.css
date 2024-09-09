@@ -73,6 +73,18 @@
   align-items: center;
   gap: 10px;
   z-index: 2;
+  padding: 5px 20px;
+  border: 1px solid #192436;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-close-menu.active {
+  border: none;
+}
+
+.btn-close-menu.active:hover {
+  border: none;
 }
 
 .btn-decor-span {
@@ -95,6 +107,10 @@
 .btn-decor-span:nth-child(3) {
   margin-bottom: 0;
   position: relative;
+}
+
+.btn-close-menu:hover{
+  border: 1px solid #ffffff;
 }
 
 .btn-close-menu:hover .btn-decor-span{
