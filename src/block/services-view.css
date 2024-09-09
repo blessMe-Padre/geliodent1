@@ -31,6 +31,7 @@
     line-height: 1;
     text-transform: uppercase;
     color: #fff;
+    margin-left: 80px;
 }
 
 .services-view__link img {
@@ -115,6 +116,10 @@
 }
 
 @media (max-width:920px) {
+    .services-view {
+        padding: 20px 0;
+    }
+
     .services-view__list {
         margin-left: 50px;
     }
@@ -148,6 +153,12 @@
 
     .services-view__img-3 {
         top: 50px;
+    }
+}
+
+@media (max-width:768px) {
+    .services-view__link {
+        margin-left: 0;
     }
 }
 

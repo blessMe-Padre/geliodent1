@@ -1255,7 +1255,7 @@ button.swiper-pagination-bullet{
 .hero-decor {
   position: absolute;
   bottom: 0;
-  left: 186px;
+  left: 9.69%;
 }
 
 .hero h2 {
@@ -1635,6 +1635,7 @@ button.swiper-pagination-bullet{
   line-height: 1;
   text-transform: uppercase;
   color: #fff;
+  margin-left: 80px;
 }
 
 .services-view__link img {
@@ -1719,6 +1720,10 @@ button.swiper-pagination-bullet{
 }
 
 @media (max-width:920px) {
+  .services-view {
+    padding: 20px 0;
+  }
+
   .services-view__list {
     margin-left: 50px;
   }
@@ -1750,6 +1755,12 @@ button.swiper-pagination-bullet{
 
   .services-view__img-3 {
     top: 50px;
+  }
+}
+
+@media (max-width:768px) {
+  .services-view__link {
+    margin-left: 0;
   }
 }
 
@@ -1807,7 +1818,7 @@ button.swiper-pagination-bullet{
 
 .card__span {
   font-family: "Involve", sans-serif;
-  font-weight: 600;
+  font-weight:500;
   font-size: clamp(1rem, -0.714rem + 3.571vw, 2.5rem);
   line-height: 1.1;
   vertical-align: top;
@@ -1824,6 +1835,17 @@ button.swiper-pagination-bullet{
   margin: 0 auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .card__title {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .card {
+    padding: 30px 0;
+  }
 }
 
 @media (max-width: 500px) {
@@ -1882,6 +1904,12 @@ button.swiper-pagination-bullet{
   .news-section .image-wrapper img {
     width: 140px;
     height: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-section {
+    padding: 40px 0;
   }
 }
 
@@ -5598,9 +5626,15 @@ body::-webkit-scrollbar-thumb {
 .section {
   width: 100%;
   height: 100vh;
-  /* background-color: var(--dark-blue); */
   color: #ffffff;
   position: relative;
+}
+
+@media (max-width: 1270px) {
+  .section {
+    height: 100%;
+    min-height: 480px;
+  }
 }
 
 .container {
@@ -5765,5 +5799,13 @@ body::-webkit-scrollbar-thumb {
 @media (min-width: 1024px) {
   .md\:max-w-\[292px\] {
     max-width: 292px;
+  }
+
+  .md\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .md\:gap-8 {
+    gap: 2rem;
   }
 }

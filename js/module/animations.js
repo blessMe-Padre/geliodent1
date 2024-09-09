@@ -57,121 +57,129 @@ export const initAnimation = () => {
 
     // ============анимация для секции info============
     if (section3) {
-        let isAtStart3 = true;
-        const timeline = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".info",
-                start: "top top",
-                end: "+=150%",
-                pin: true,
-                // markers: true,
-                scrub: true,
-                // onLeave: () => {
-                //     moveToSection(4);
-                // },
-                // onUpdate: (self) => {
-                //     isAtStart3 = self.progress === 0; // Обновляем флаг в зависимости от прогресса
-                //     if (isAtStart3 && self.direction === -1) {
-                //         console.log('скролл вверх');
-                //         moveToSection(2);
-                //     }
-                // }
-            }
-        });
+        if (window.innerWidth > 768) {
+            let isAtStart3 = true;
+            const timeline = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".info",
+                    start: "top top",
+                    end: "+=150%",
+                    pin: true,
+                    // markers: true,
+                    scrub: true,
+                    // onLeave: () => {
+                    //     moveToSection(4);
+                    // },
+                    // onUpdate: (self) => {
+                    //     isAtStart3 = self.progress === 0; // Обновляем флаг в зависимости от прогресса
+                    //     if (isAtStart3 && self.direction === -1) {
+                    //         console.log('скролл вверх');
+                    //         moveToSection(2);
+                    //     }
+                    // }
+                }
+            });
 
-        timeline.to(".info__sub-title", {
-            color: "#ffffff",
-        }, "start") // Начало анимации
-            .to(".info__img", {
-                y: -180,
-                scale: 1.4,
+            timeline.to(".info__sub-title", {
+                color: "#ffffff",
             }, "start") // Начало анимации
-            .to(".info-wrapper", {
-                y: 600,
-            }, "start"); // Начало анимации
+                .to(".info__img", {
+                    y: -180,
+                    scale: 1.4,
+                }, "start") // Начало анимации
+                .to(".info-wrapper", {
+                    y: 600,
+                }, "start"); // Начало анимации
+        }
+
     }
 
     // ======анимация для секции services =========================
     if (section4) {
-        let isAtStart4 = true;
-        const timeline1 = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".services-view",
-                start: "top top",
-                end: "+=150%",
-                pin: true,
-                // markers: true,
-                scrub: true,
-                // onLeave: ({ direction }) => {
-                //     if (direction === 1) {
-                //         moveToSection(5);
-                //         console.log('скролл вниз');
-                //     }
-                // },
-                // onUpdate: (self) => {
-                //     isAtStart4 = self.progress === 0; // Обновляем флаг в зависимости от прогресса
-                //     if (isAtStart4 && self.direction === -1) {
-                //         console.log('скролл вверх');
-                //         moveToSection(3);
-                //     }
-                // }
-            }
-        });
 
-        timeline1.to(".opacity-06", {
-            opacity: 1,
-        })
-            .to('.opacity-04', {
+        if (window.innerWidth > 768) {
+            let isAtStart4 = true;
+            const timeline1 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".services-view",
+                    start: "top top",
+                    end: "+=150%",
+                    pin: true,
+                    // markers: true,
+                    scrub: true,
+                    // onLeave: ({ direction }) => {
+                    //     if (direction === 1) {
+                    //         moveToSection(5);
+                    //         console.log('скролл вниз');
+                    //     }
+                    // },
+                    // onUpdate: (self) => {
+                    //     isAtStart4 = self.progress === 0; // Обновляем флаг в зависимости от прогресса
+                    //     if (isAtStart4 && self.direction === -1) {
+                    //         console.log('скролл вверх');
+                    //         moveToSection(3);
+                    //     }
+                    // }
+                }
+            });
+
+            timeline1.to(".opacity-06", {
                 opacity: 1,
             })
-            .to('.opacity-02', {
-                opacity: 1,
-            })
-            .to('.opacity-015', {
-                opacity: 1,
-            })
-            .to('.opacity-01', {
-                opacity: 1,
-            })
-            .to('.opacity-008', {
-                opacity: 1,
-            })
-            .to('.opacity-005', {
-                opacity: 1,
-            })
+                .to('.opacity-04', {
+                    opacity: 1,
+                })
+                .to('.opacity-02', {
+                    opacity: 1,
+                })
+                .to('.opacity-015', {
+                    opacity: 1,
+                })
+                .to('.opacity-01', {
+                    opacity: 1,
+                })
+                .to('.opacity-008', {
+                    opacity: 1,
+                })
+                .to('.opacity-005', {
+                    opacity: 1,
+                })
+        }
     }
 
     // ================ Анимация секции CARD ================
     if (sectionCard) {
-        let isAtStart5 = true;
-        const timelineCard = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".card",
-                start: "top top",
-                end: "+=150%",
-                pin: true,
-                // markers: true,
-                scrub: true,
-                // onLeave: ({ direction }) => {
-                //     if (direction === 1) {
-                //         moveToSection(5);
-                //         // console.log('скролл вниз');
-                //     }
-                // },
-                // onUpdate: (self) => {
-                //     isAtStart5 = self.progress === 0; // Обновляем флаг в зависимости от прогресса
-                //     if (isAtStart5 && self.direction === -1) {
-                //         // console.log('скролл вверх');
-                //         moveToSection(3);
-                //     }
-                // }
-            }
-        });
+        if (window.innerWidth > 768) {
+            let isAtStart5 = true;
+            const timelineCard = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".card",
+                    start: "top top",
+                    end: "+=150%",
+                    pin: true,
+                    // markers: true,
+                    scrub: true,
+                    // onLeave: ({ direction }) => {
+                    //     if (direction === 1) {
+                    //         moveToSection(5);
+                    //         // console.log('скролл вниз');
+                    //     }
+                    // },
+                    // onUpdate: (self) => {
+                    //     isAtStart5 = self.progress === 0; // Обновляем флаг в зависимости от прогресса
+                    //     if (isAtStart5 && self.direction === -1) {
+                    //         // console.log('скролл вверх');
+                    //         moveToSection(3);
+                    //     }
+                    // }
+                }
+            });
 
-        timelineCard.to(".card__img", {
-            y: -80,
-            scale: 1.4,
-        }, "start");
+            timelineCard.to(".card__img", {
+                y: -80,
+                scale: 1.4,
+            }, "start");
+        }
     }
     // ================ Анимация секции CARD-ABOUT ================
     if (sectionCardAbout) {

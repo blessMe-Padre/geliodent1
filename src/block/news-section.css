@@ -45,6 +45,12 @@
     }
 }
 
+@media (max-width: 768px) {
+    .news-section {
+        padding: 40px 0;
+    }
+}
+
 @media (max-width: 550px) {
     .news-section__title {
         font-size: 30px;
