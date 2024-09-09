@@ -148,8 +148,9 @@ body::-webkit-scrollbar-thumb {
 :root {
     --white: #ffffff;
     --default-black: #363232;
-    --dark-blue: #152033;
+    --dark-blue: #041126;
     --blue: #192436;
+    --bg: #041126;
 }
 
 /* Прочие классы */
@@ -181,8 +182,7 @@ body::-webkit-scrollbar-thumb {
 
     width: 100%;
     height: 100vh;
-    /* background-color: var(--dark-blue); */
-    background-color: #152033;
+    z-index: 0;
 }
 
 .bg-wrapper img {
@@ -197,7 +197,11 @@ body::-webkit-scrollbar-thumb {
     /* background-color: var(--dark-blue); */
     color: #ffffff;
     position: relative;
-    background: transparent;
+}
+
+.container {
+    position: relative;
+    z-index: 1 !important;
 }
 
 .section--dark-blue {
@@ -283,6 +287,13 @@ body::-webkit-scrollbar-thumb {
 
 .link:hover {
     color: #596476;
+}
+
+.border-subtitle {
+    padding: 0 20px;
+    border: 1px solid #192436;
+    border-radius: 20px;
+    display: inline-block;
 }
 
 

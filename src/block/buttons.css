@@ -17,6 +17,20 @@
 
     border: 2px solid #ffffff;
     border-radius: 100%;
+
+    transition: all 0.3s ease;
+}
+
+.info-link svg {
+    fill: white;
+}
+
+.info-link:hover {
+    background-color: #fff;
+    color: var(--dark-blue);
+}
+.info-link:hover svg {
+    fill: var(--dark-blue);
 }
 
 .footer-button {

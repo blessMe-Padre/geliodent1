@@ -1,5 +1,11 @@
 .hero {}
 
+.hero-decor {
+    position: absolute;
+    bottom: 0;
+    left: 186px;
+}
+
 .hero h2 {
     position: static;
     font-family: "Bebas Neue", sans-serif;
