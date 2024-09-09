@@ -65,6 +65,10 @@
 @media (max-width: 500px) {
     .card__text {
         width: 90%;
+        font-size: 40px;
+    }
+    .card__text--mobile {
+        padding-left: 15px;
     }
 
     .card__img {

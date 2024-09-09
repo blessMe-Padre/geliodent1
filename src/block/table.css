@@ -15,7 +15,7 @@
     font-family: "Bebas Neue", sans-serif;
     font-weight: 700;
     font-size: clamp(9.375rem, -1.339rem + 22.321vw, 18.75rem);
-    line-height: 1;
+    line-height: 0.8;
     color: #fff;
 }
 
@@ -44,7 +44,7 @@
 
 .table__img-3 {
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 0;
     transform-origin: 33.5% 16.2%;
     animation: swing 2s infinite alternate ease-in-out;
@@ -98,6 +98,10 @@
 }
 
 @media (max-width: 769px) {
+
+    .table-decor-vector-2 {
+        bottom: 150px;
+    }
     .table__row {
         height: 200px;
     }
@@ -110,15 +114,21 @@
     }
 
     .table__img-1 {
-        top: -50px;
+        top: -90px;
+        left: 21px;
+    }
+    .table__img-2 {
+        top: -63px;
+       right: -76px;
     }
 
     .table__img-3 {
-        top: -30px;
+        top: -50px;
+        left: -30px;
     }
 
     .table__img-4 {
-        top: 30px;
+        top: 0px;
         left: -30px;
     }
 }

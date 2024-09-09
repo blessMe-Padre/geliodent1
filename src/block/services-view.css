@@ -160,6 +160,11 @@
     .services-view__link {
         margin-left: 0;
     }
+
+    .opacity-06,.opacity-04,.opacity-02,.opacity-01,.opacity-015,.opacity-008,.opacity-005 {
+        opacity: 1;
+    }
+
 }
 
 @media (max-width:550px) {
