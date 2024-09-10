@@ -3108,6 +3108,8 @@ button.swiper-pagination-bullet{
   line-height: 1;
   color: #fff;
   margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
 }
 
 .title span {
@@ -4230,6 +4232,13 @@ button.swiper-pagination-bullet{
   align-items: center;
   justify-content: center;
   width: 100%;
+  transition: color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.faq__load-more-btn:hover {
+  color: #ffffff;
+  background-color: #596476;
 }
 
 @media (max-width: 620px) {
