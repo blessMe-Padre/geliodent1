@@ -5,8 +5,12 @@
     background-image: url('../src/img/bg/bg-product.webp');
     background-repeat: no-repeat;
     position: relative;
-
     min-height: 780px;
+}
+
+.calculate-bg-2 {
+    background-image: url('../src/img/bg-calculate-2.webp');
+    background-repeat: no-repeat;
 }
 
 .calculate__text {

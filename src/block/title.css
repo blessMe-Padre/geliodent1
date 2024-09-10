@@ -6,6 +6,9 @@
     color: #fff;
 
     margin-bottom: 30px;
+
+    position: relative;
+    z-index: 1;
 }
 
 .title span {

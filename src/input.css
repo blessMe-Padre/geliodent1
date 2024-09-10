@@ -2,6 +2,7 @@
 
 /* Импорт кастомных стилей для компонентов */
 @import './block/menu-button.css';
+@import './block/fonts.css';
 @import './block/menu.css';
 @import './block/swiper.css';
 @import './block/sliders.css';
@@ -48,63 +49,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Зарегистрируйте пользовательское семейство шрифтов и сообщите браузеру, где его найти. */
-/* @font-face {
-    font-family: 'archangelsk';
-    src: url('../src/fonts/archangelsk.ttf');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-} */
-
-@font-face {
-    font-family: 'Bebas Neue';
-    src: url('../src/fonts/BebasNeueBold.woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+/* Переменные */
+:root {
+    --white: #ffffff;
+    --default-black: #363232;
+    --dark-blue: #041126;
+    --blue: #192436;
+    --bg: #041126;
 }
-
-@font-face {
-    font-family: 'Bebas Neue';
-    src: url('../src/fonts/BebasNeueRegular.woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Involve';
-    src: url('../src/fonts/Involve-Regular.woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Involve';
-    src: url('../src/fonts/Involve-Medium.woff2');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Involve';
-    src: url('../src/fonts/Involve-SemiBold.woff2');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Involve';
-    src: url('../src/fonts/Involve-Bold.woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
 
 @layer base {
     html {
@@ -143,15 +95,6 @@ body::-webkit-scrollbar-thumb {
     /* Оформление границ бегунка */
 }
 
-/* Переменные */
-
-:root {
-    --white: #ffffff;
-    --default-black: #363232;
-    --dark-blue: #041126;
-    --blue: #192436;
-    --bg: #041126;
-}
 
 /* Прочие классы */
 .lock {
@@ -267,10 +210,17 @@ body::-webkit-scrollbar-thumb {
     border-top-right-radius: 4px;
 }
 
+/* background ========================*/
+
 .space-background {
     background-color: var(--dark-blue);
     background-image: url('../src/img/bg-space.webp');
     background-repeat: no-repeat;
+    position: relative;
+}
+.space-background-repeat {
+    background-color: var(--dark-blue);
+    background-image: url('../src/img/bg-space.webp');
     position: relative;
 }
 
@@ -308,7 +258,6 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;
     display: inline-block;
 }
-
 
 /* Удалить все что ниже */
 

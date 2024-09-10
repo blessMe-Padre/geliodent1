@@ -13,6 +13,7 @@ import { initAccordions } from "./module/accordions.js";
 import { initObservers } from "./module/observers.js";
 import { initAnimateText } from "./module/animate-text.js";
 import { initCounter } from "./module/counters.js";
+import { initPhoneMask } from "./module/phone-mask.js";
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -22,6 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initSlider();
     initCurrentYear();
     initPopup();
+    initPhoneMask();
 
     // initScroll();
     // baguetteBox.run('.gallery-wrapper');
