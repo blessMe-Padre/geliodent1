@@ -154,6 +154,88 @@
   }
 }
 
+/* Зарегистрируйте пользовательское семейство шрифтов и сообщите браузеру, где его найти. */
+
+/* @font-face {
+    font-family: 'archangelsk';
+    src: url('../src/fonts/archangelsk.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} */
+
+@font-face {
+  font-family: 'Bebas Neue';
+
+  src: url('../src/fonts/BebasNeueBold.woff2');
+
+  font-weight: 700;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+
+  src: url('../src/fonts/BebasNeueRegular.woff2');
+
+  font-weight: 400;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Involve';
+
+  src: url('../src/fonts/Involve-Regular.woff2');
+
+  font-weight: 400;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Involve';
+
+  src: url('../src/fonts/Involve-Medium.woff2');
+
+  font-weight: 500;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Involve';
+
+  src: url('../src/fonts/Involve-SemiBold.woff2');
+
+  font-weight: 600;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Involve';
+
+  src: url('../src/fonts/Involve-Bold.woff2');
+
+  font-weight: 700;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
 .mobile-menu {
   transition: opacity 0.8s ease;
   opacity: 0;
@@ -5491,88 +5573,6 @@ body {
 
 .underline {
   text-decoration-line: underline;
-}
-
-/* Зарегистрируйте пользовательское семейство шрифтов и сообщите браузеру, где его найти. */
-
-/* @font-face {
-    font-family: 'archangelsk';
-    src: url('../src/fonts/archangelsk.ttf');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-} */
-
-@font-face {
-  font-family: 'Bebas Neue';
-
-  src: url('../src/fonts/BebasNeueBold.woff2');
-
-  font-weight: 700;
-
-  font-style: normal;
-
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Bebas Neue';
-
-  src: url('../src/fonts/BebasNeueRegular.woff2');
-
-  font-weight: 400;
-
-  font-style: normal;
-
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Involve';
-
-  src: url('../src/fonts/Involve-Regular.woff2');
-
-  font-weight: 400;
-
-  font-style: normal;
-
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Involve';
-
-  src: url('../src/fonts/Involve-Medium.woff2');
-
-  font-weight: 500;
-
-  font-style: normal;
-
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Involve';
-
-  src: url('../src/fonts/Involve-SemiBold.woff2');
-
-  font-weight: 600;
-
-  font-style: normal;
-
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Involve';
-
-  src: url('../src/fonts/Involve-Bold.woff2');
-
-  font-weight: 700;
-
-  font-style: normal;
-
-  font-display: swap;
 }
 
 body::-webkit-scrollbar {
