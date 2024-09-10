@@ -80,7 +80,7 @@ export const initAnimation = () => {
                 }
             });
 
-            timeline.to(".info__sub-title", {
+            timeline.to(".info__sub-title wow fadeInUp", {
                 color: "#ffffff",
             }, "start") // Начало анимации
                 .to(".info__img", {
@@ -275,7 +275,7 @@ export const initAnimation = () => {
             }
         });
 
-        timelineInfo.to(".info__sub-title", {
+        timelineInfo.to(".info__sub-title wow fadeInUp", {
             color: "#ffffff",
         }, "start") // Начало анимации
             .to(".info__img", {

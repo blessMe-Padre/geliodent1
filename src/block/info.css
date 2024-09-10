@@ -13,7 +13,7 @@
     z-index: 2;
 }
 
-.info__title {
+.info__title wow fadeInUp {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 700;
     font-size: clamp(3.125rem, -0.446rem + 7.44vw, 6.25rem);
@@ -21,7 +21,7 @@
     color: #fff;
 }
 
-.info__sub-title {
+.info__sub-title wow fadeInUp {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 700;
     font-size: clamp(3.125rem, -0.446rem + 7.44vw, 6.25rem);
@@ -35,11 +35,11 @@
         gap: 20px;
     }
 
-    .info__title {
+    .info__title wow fadeInUp {
         font-size: 30px;
     }
 
-    .info__sub-title {
+    .info__sub-title wow fadeInUp {
         font-size: 30px;
     }
 
