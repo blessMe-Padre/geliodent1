@@ -274,6 +274,13 @@ body::-webkit-scrollbar-thumb {
     position: relative;
 }
 
+.space-background-re {
+    background-color: var(--dark-blue);
+    background-image: url('../src/img/bg-space.webp');
+    background-repeat: no-repeat;
+    position: relative;
+}
+
 .space-tooth-background {
     background-color: var(--dark-blue);
     background-image: url('../src/img/bg.webp');

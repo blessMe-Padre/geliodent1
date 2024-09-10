@@ -233,35 +233,35 @@ export const initAnimation = () => {
     }
 
     // ============анимация для секции наши клиенты - о компании============
-    // if (document.querySelector(".our-clients__wrapper-about")) {
-    //     let isAtStartClientsAbout = true;
-    //     const timelineScroll = gsap.timeline({
-    //         scrollTrigger: {
-    //             trigger: ".our-clients__wrapper-about",
-    //             start: "top-=100 top",
-    //             end: () => "+=" + document.querySelector(".our-clients__list").scrollWidth + "px",
-    //             pin: true,
-    //             scrub: true,
-    //             onLeave: ({ direction }) => {
-    //                 if (direction === 1) {
-    //                     moveToScreen(9);
-    //                 }
-    //             },
-    //             onUpdate: (self) => {
-    //                 isAtStartClientsAbout = self.progress === 0; // Обновляем флаг в зависимости от прогресса
-    //                 if (isAtStartClientsAbout && self.direction === -1) {
-    //                     console.log('скролл вверх');
-    //                     moveToScreen(7);
-    //                 }
-    //             }
+    if (document.querySelector(".our-clients__wrapper-about")) {
+        let isAtStartClientsAbout = true;
+        const timelineScroll = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".our-clients__wrapper-about",
+                start: "top-=100 top",
+                end: () => "+=" + document.querySelector(".our-clients__list").scrollWidth + "px",
+                pin: true,
+                scrub: true,
+                onLeave: ({ direction }) => {
+                    if (direction === 1) {
+                        moveToScreen(9);
+                    }
+                },
+                onUpdate: (self) => {
+                    isAtStartClientsAbout = self.progress === 0; // Обновляем флаг в зависимости от прогресса
+                    if (isAtStartClientsAbout && self.direction === -1) {
+                        console.log('скролл вверх');
+                        moveToScreen(7);
+                    }
+                }
 
-    //         }
-    //     });
+            }
+        });
 
-    //     timelineScroll.to(".our-clients__list", {
-    //         x: () => -(document.querySelector(".our-clients__list").scrollWidth - document.querySelector(".our-clients__wrapper-about").offsetWidth),
-    //     }, "start");
-    // }
+        timelineScroll.to(".our-clients__list", {
+            x: () => -(document.querySelector(".our-clients__list").scrollWidth - document.querySelector(".our-clients__wrapper-about").offsetWidth),
+        }, "start");
+    }
 
     // ============анимация для секции section-info============
     if (sectionInfo) {
