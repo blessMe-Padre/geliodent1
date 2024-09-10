@@ -3093,6 +3093,14 @@ button.swiper-pagination-bullet{
   }
 }
 
+.our-clients-fix-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .title {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 700;
@@ -5575,6 +5583,16 @@ body {
   text-decoration-line: underline;
 }
 
+/* Переменные */
+
+:root {
+  --white: #ffffff;
+  --default-black: #363232;
+  --dark-blue: #041126;
+  --blue: #192436;
+  --bg: #041126;
+}
+
 body::-webkit-scrollbar {
   width: 0px;
   /* Ширина всего элемента навигации */
@@ -5592,16 +5610,6 @@ body::-webkit-scrollbar-thumb {
   /* Округление бегунка */
   border: 3px solid #152033;
   /* Оформление границ бегунка */
-}
-
-/* Переменные */
-
-:root {
-  --white: #ffffff;
-  --default-black: #363232;
-  --dark-blue: #041126;
-  --blue: #192436;
-  --bg: #041126;
 }
 
 /* Прочие классы */
@@ -5723,6 +5731,12 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--dark-blue);
   background-image: url('../src/img/bg-space.webp');
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.space-background-repeat {
+  background-color: var(--dark-blue);
+  background-image: url('../src/img/bg-space.webp');
   position: relative;
 }
 
