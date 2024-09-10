@@ -210,6 +210,8 @@ body::-webkit-scrollbar-thumb {
     border-top-right-radius: 4px;
 }
 
+/* background ========================*/
+
 .space-background {
     background-color: var(--dark-blue);
     background-image: url('../src/img/bg-space.webp');

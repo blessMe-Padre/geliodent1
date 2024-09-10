@@ -3937,6 +3937,11 @@ button.swiper-pagination-bullet{
   min-height: 780px;
 }
 
+.calculate-bg-2 {
+  background-image: url('../src/img/bg-calculate-2.webp');
+  background-repeat: no-repeat;
+}
+
 .calculate__text {
   font-family: "Involve", sans-serif;
   font-weight: 600;
@@ -5726,6 +5731,8 @@ body::-webkit-scrollbar-thumb {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
+
+/* background ========================*/
 
 .space-background {
   background-color: var(--dark-blue);
