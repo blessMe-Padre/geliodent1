@@ -1659,7 +1659,7 @@ button.swiper-pagination-bullet{
   z-index: 2;
 }
 
-.info__title wow fadeInUp {
+.info__title {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 700;
   font-size: clamp(3.125rem, -0.446rem + 7.44vw, 6.25rem);
@@ -1667,7 +1667,7 @@ button.swiper-pagination-bullet{
   color: #fff;
 }
 
-.info__sub-title wow fadeInUp {
+.info__sub-title {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 700;
   font-size: clamp(3.125rem, -0.446rem + 7.44vw, 6.25rem);
