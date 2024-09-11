@@ -5822,9 +5822,16 @@ body::-webkit-scrollbar-thumb {
   font-size: 180px;
 }
 
+.header {
+  transition: all 0.3s ease;
+}
+
 .shadow-filter-1 {
   /* background: rgba(21, 32, 51, 0.9); */
   /* box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23); */
+  -webkit-backdrop-filter: blur(400px);
+          backdrop-filter: blur(400px);
+  background: rgba(21, 32, 51, 0.2);
 }
 
 .section-placeholder {
