@@ -75,9 +75,11 @@
     border-radius: 20px;
     transition: all 0.3s ease;
 }
+
 .btn-close-menu.active {
     border: none;
 }
+
 .btn-close-menu.active:hover {
     border: none;
 }
@@ -89,22 +91,32 @@
     width: 27px;
     margin-bottom: 5px;
     transition: all 0.3s ease;
-    }
+}
 
-.btn-decor-span-1 {width: 21px;}
-.btn-decor-span-3 {width: 12px;}
+.btn-decor-span-1 {
+    width: 21px;
+}
+
+.btn-decor-span-3 {
+    width: 12px;
+}
 
 .btn-decor-span:nth-child(3) {
     margin-bottom: 0;
     position: relative;
 }
 
-.btn-close-menu:hover{
-    border: 1px solid #ffffff;
+@media (min-width: 768px) {
+
+    .btn-close-menu:hover {
+        border: 1px solid #ffffff;
+    }
+
+    .btn-close-menu:hover .btn-decor-span {
+        width: 27px;
+    }
 }
-.btn-close-menu:hover .btn-decor-span{
-    width: 27px;
-}
+
 
 .btn-close-menu .btn-close-menu__text-span {
     opacity: 1;
@@ -116,17 +128,18 @@
 }
 
 
-.btn-close-menu.active .btn-decor-span-3{
+.btn-close-menu.active .btn-decor-span-3 {
     opacity: 0;
 }
 
-.btn-close-menu.active .btn-decor-span-1{
+.btn-close-menu.active .btn-decor-span-1 {
     transform: rotate(45deg);
     width: 27px;
     position: relative;
     top: 7px;
 }
-.btn-close-menu.active .btn-decor-span-2{
+
+.btn-close-menu.active .btn-decor-span-2 {
     transform: rotate(-45deg);
     width: 27px;
 }

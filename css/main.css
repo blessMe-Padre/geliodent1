@@ -109,12 +109,14 @@
   position: relative;
 }
 
-.btn-close-menu:hover{
-  border: 1px solid #ffffff;
-}
+@media (min-width: 768px) {
+  .btn-close-menu:hover {
+    border: 1px solid #ffffff;
+  }
 
-.btn-close-menu:hover .btn-decor-span{
-  width: 27px;
+  .btn-close-menu:hover .btn-decor-span {
+    width: 27px;
+  }
 }
 
 .btn-close-menu .btn-close-menu__text-span {
@@ -126,18 +128,18 @@
   opacity: 0;
 }
 
-.btn-close-menu.active .btn-decor-span-3{
+.btn-close-menu.active .btn-decor-span-3 {
   opacity: 0;
 }
 
-.btn-close-menu.active .btn-decor-span-1{
+.btn-close-menu.active .btn-decor-span-1 {
   transform: rotate(45deg);
   width: 27px;
   position: relative;
   top: 7px;
 }
 
-.btn-close-menu.active .btn-decor-span-2{
+.btn-close-menu.active .btn-decor-span-2 {
   transform: rotate(-45deg);
   width: 27px;
 }
