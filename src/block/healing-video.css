@@ -6,6 +6,9 @@
     background-image: url('../src/img/bg/bg-vidoe-section.webp');
     background-repeat: no-repeat;
     background-size: cover;
+
+    position: relative;
+    z-index: 1;
 }
 
 .healing-video__title {

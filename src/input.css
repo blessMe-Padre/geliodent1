@@ -212,25 +212,7 @@ body::-webkit-scrollbar-thumb {
 
 /* background ========================*/
 
-.space-background {
-    /* background-color: var(--dark-blue);
-    background-image: url('../src/img/bg-space.webp');
-    background-repeat: no-repeat;
-    position: relative; */
-}
 
-.space-background-repeat {
-    /* background-color: var(--dark-blue);
-    background-image: url('../src/img/bg-space.webp');
-    position: relative; */
-}
-
-.space-background-re {
-    /* background-color: var(--dark-blue);
-    background-image: url('../src/img/bg-space.webp');
-    background-repeat: no-repeat;
-    position: relative; */
-}
 
 .space-tooth-background {
     background-image: url('../src/img/bg.webp');
