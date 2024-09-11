@@ -2,7 +2,7 @@
     padding-top: 100px;
     padding-bottom: 70px;
     position: relative;
-    background-image: url('../src/img/bg-space.webp');
+    /* background-image: url('../src/img/bg-space.webp'); */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -80,7 +80,7 @@
     width: 100%;
 
     transition: color 0.3s ease,
-    background-color 0.3s ease;
+        background-color 0.3s ease;
 }
 
 .faq__load-more-btn:hover {
