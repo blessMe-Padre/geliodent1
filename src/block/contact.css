@@ -2,9 +2,9 @@
     padding-top: 150px;
     padding-bottom: 70px;
     position: relative;
-    background-image: url('../src/img/bg-space.webp');
+    /* background-image: url('../src/img/bg-space.webp');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
 
 .contact__title {

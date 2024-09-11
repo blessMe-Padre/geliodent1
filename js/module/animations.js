@@ -157,23 +157,25 @@ export const initAnimation = () => {
     }
     // ================ Анимация секции CARD-ABOUT ================
     if (sectionCardAbout) {
-        let isAtStartAbout = true;
+        if (window.innerWidth > 768) {
+            let isAtStartAbout = true;
 
-        const timelineCardAbout = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".card-about",
-                start: "top top",
-                end: "+=150%",
-                pin: true,
-                // markers: true,
-                scrub: true,
-            }
-        });
+            const timelineCardAbout = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".card-about",
+                    start: "top top",
+                    end: "+=150%",
+                    pin: true,
+                    // markers: true,
+                    scrub: true,
+                }
+            });
 
-        timelineCardAbout.to(".card__img", {
-            y: -80,
-            scale: 1.4,
-        }, "start");
+            timelineCardAbout.to(".card__img", {
+                y: -80,
+                scale: 1.4,
+            }, "start");
+        }
     }
 
     // ============анимация для секции наши клиенты главная============
