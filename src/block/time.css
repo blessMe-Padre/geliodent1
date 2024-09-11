@@ -1,9 +1,11 @@
 .time {
     padding-top: clamp(1.875rem, 0.979rem + 3.774vw, 4.375rem);
     padding-bottom: clamp(1.875rem, 0.979rem + 3.774vw, 4.375rem);
-    background-color: var(--dark-blue);
     background-image: url('../src/img/bg/time-bg.webp');
     background-repeat: no-repeat;
+    background-position: center right;
+    position: relative;
+    z-index: 1;
 }
 
 .time__wrapper {
