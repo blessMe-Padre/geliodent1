@@ -213,12 +213,20 @@ body::-webkit-scrollbar-thumb {
 /* background ========================*/
 
 
-
 .space-tooth-background {
     background-image: url('../src/img/bg.webp');
     background-repeat: no-repeat;
     position: relative;
 }
+
+.visit-bg {
+    background-image: url('../src/img/visit.webp');
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: contain;
+}
+
+
 
 .container-lg {
     max-width: 1960px;
