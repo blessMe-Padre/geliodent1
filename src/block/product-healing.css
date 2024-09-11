@@ -1,7 +1,7 @@
 .product-healing {
     padding-top: 120px;
     padding-bottom: clamp(1.875rem, 0.979rem + 3.774vw, 4.375rem);
-    background-color: var(--dark-blue);
+    /* background-color: var(--dark-blue); */
 }
 
 .product-healing__title {

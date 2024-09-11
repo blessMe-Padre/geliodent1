@@ -1965,6 +1965,10 @@ button.swiper-pagination-bullet{
 
 .news-section {
   padding: 100px 0;
+  background-color: var(--dark-blue);
+  background-image: url('../src/img/pixel.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .news-section__title {
@@ -2867,7 +2871,7 @@ button.swiper-pagination-bullet{
 .product-healing {
   padding-top: 120px;
   padding-bottom: clamp(1.875rem, 0.979rem + 3.774vw, 4.375rem);
-  background-color: var(--dark-blue);
+  /* background-color: var(--dark-blue); */
 }
 
 .product-healing__title {
@@ -2939,7 +2943,6 @@ button.swiper-pagination-bullet{
 .our-clients {
   padding-top: clamp(1.875rem, 0.979rem + 3.774vw, 4.375rem);
   padding-bottom: clamp(1.875rem, 0.979rem + 3.774vw, 4.375rem);
-  background-color: var(--dark-blue);
   position: relative;
 }
 
@@ -3309,6 +3312,8 @@ button.swiper-pagination-bullet{
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  position: relative;
+  z-index: 1;
 }
 
 .how--braket-bg {
@@ -4752,7 +4757,7 @@ button.swiper-pagination-bullet{
   padding-top: 120px;
   padding-bottom: 70px;
   position: relative;
-  background-image: url('../src/img/bg-space.webp');
+  background-image: url('../src/img/pixel.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -5703,7 +5708,6 @@ body::-webkit-scrollbar-thumb {
 
 .section-info {
   padding-top: 50px;
-  background-color: var(--dark-blue);
 }
 
 .product-main-bg {
@@ -5745,27 +5749,26 @@ body::-webkit-scrollbar-thumb {
 /* background ========================*/
 
 .space-background {
-  background-color: var(--dark-blue);
-  background-image: url('../src/img/bg-space.webp');
-  background-repeat: no-repeat;
-  position: relative;
+  /* background-color: var(--dark-blue);
+    background-image: url('../src/img/bg-space.webp');
+    background-repeat: no-repeat;
+    position: relative; */
 }
 
 .space-background-repeat {
-  background-color: var(--dark-blue);
-  background-image: url('../src/img/bg-space.webp');
-  position: relative;
+  /* background-color: var(--dark-blue);
+    background-image: url('../src/img/bg-space.webp');
+    position: relative; */
 }
 
 .space-background-re {
-  background-color: var(--dark-blue);
-  background-image: url('../src/img/bg-space.webp');
-  background-repeat: no-repeat;
-  position: relative;
+  /* background-color: var(--dark-blue);
+    background-image: url('../src/img/bg-space.webp');
+    background-repeat: no-repeat;
+    position: relative; */
 }
 
 .space-tooth-background {
-  background-color: var(--dark-blue);
   background-image: url('../src/img/bg.webp');
   background-repeat: no-repeat;
   position: relative;

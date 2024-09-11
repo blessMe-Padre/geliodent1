@@ -2,10 +2,11 @@
     padding-top: 120px;
     padding-bottom: 70px;
     position: relative;
-    background-image: url('../src/img/bg-space.webp');
+    background-image: url('../src/img/pixel.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 
 .about-text {
     font-family: "Bebas Neue", sans-serif;
