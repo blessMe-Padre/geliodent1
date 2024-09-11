@@ -107,19 +107,6 @@ export const initAnimation = () => {
                     pin: true,
                     // markers: true,
                     scrub: true,
-                    // onLeave: ({ direction }) => {
-                    //     if (direction === 1) {
-                    //         moveToSection(5);
-                    //         console.log('скролл вниз');
-                    //     }
-                    // },
-                    // onUpdate: (self) => {
-                    //     isAtStart4 = self.progress === 0; // Обновляем флаг в зависимости от прогресса
-                    //     if (isAtStart4 && self.direction === -1) {
-                    //         console.log('скролл вверх');
-                    //         moveToSection(3);
-                    //     }
-                    // }
                 }
             });
 
@@ -159,19 +146,6 @@ export const initAnimation = () => {
                     pin: true,
                     // markers: true,
                     scrub: true,
-                    // onLeave: ({ direction }) => {
-                    //     if (direction === 1) {
-                    //         moveToSection(5);
-                    //         // console.log('скролл вниз');
-                    //     }
-                    // },
-                    // onUpdate: (self) => {
-                    //     isAtStart5 = self.progress === 0; // Обновляем флаг в зависимости от прогресса
-                    //     if (isAtStart5 && self.direction === -1) {
-                    //         // console.log('скролл вверх');
-                    //         moveToSection(3);
-                    //     }
-                    // }
                 }
             });
 
@@ -193,18 +167,6 @@ export const initAnimation = () => {
                 pin: true,
                 // markers: true,
                 scrub: true,
-                // onLeave: ({ direction }) => {
-                //     if (direction === 1) {
-                //         moveToScreen(4);
-                //     }
-                // },
-                // onUpdate: (self) => {
-                //     isAtStartAbout = self.progress === 0; // Обновляем флаг в зависимости от прогресса
-                //     if (isAtStartAbout && self.direction === -1) {
-                //         console.log('скролл вверх');
-                //         moveToScreen(2);
-                //     }
-                // }
             }
         });
 
@@ -329,166 +291,17 @@ export const initAnimation = () => {
     }
 
 
-    // Слушатели скролла для перехода по секциям
+    // Инициализация ScrollTrigger для каждого секции
+    document.querySelectorAll('.pin').forEach((section) => {
+        ScrollTrigger.create({
+            trigger: section, // Элемент, который будет триггером (секция)
+            pin: true, // Закрепить (приклеить) эту секцию
+            start: "top top", // Закрепление начнется, когда верх секции достигнет верхней части окна просмотра (viewport)
+            end: "bottom top", // Закрепление закончится, когда низ секции достигнет верхней части окна просмотра
+            pinSpacing: false, // Отключить добавление пространства между секциями, чтобы они оставались вплотную друг к другу
+        });
+    });
 
-    let startY;
 
-    // if (section1) {
-    //     section1.addEventListener('wheel', evt => moveToSection(evt.deltaY < 0 ? 1 : 2));
-    //     section1.addEventListener('touchstart', (evt) => {
-    //         startY = evt.touches[0].clientY;
-    //     });
-
-    //     section1.addEventListener('touchmove', (evt) => {
-    //         const currentY = evt.touches[0].clientY;
-    //         const deltaY = startY - currentY;
-    //         if (deltaY < 0) {
-    //             moveToSection(1);
-    //         } else if (deltaY > 0) {
-    //             moveToSection(2);
-    //         }
-    //         evt.preventDefault();
-    //     });
-    // }
-
-    // if (section2) {
-    //     section2.addEventListener('wheel', evt => moveToSection(evt.deltaY < 0 ? 1 : 3));
-
-    //     section2.addEventListener('touchstart', (evt) => {
-    //         startY = evt.touches[0].clientY;
-    //     });
-
-    //     section2.addEventListener('touchmove', (evt) => {
-    //         const currentY = evt.touches[0].clientY;
-    //         const deltaY = startY - currentY;
-    //         if (deltaY < 0) {
-    //             moveToSection(1);
-    //         } else if (deltaY > 0) {
-    //             moveToSection(3);
-    //         }
-    //         evt.preventDefault();
-    //     });
-    // }
-
-    // if (section5) {
-    //     section5.addEventListener('wheel', evt => moveToSection(evt.deltaY < 0 ? 4 : 6));
-    //     section5.addEventListener('touchstart', (evt) => {
-    //         startY = evt.touches[0].clientY;
-    //     });
-    //     section5.addEventListener('touchmove', (evt) => {
-    //         const currentY = evt.touches[0].clientY;
-    //         const deltaY = startY - currentY;
-    //         if (deltaY < 0) {
-    //             moveToSection(4);
-    //         } else if (deltaY > 0) {
-    //             moveToSection(6);
-    //         }
-    //         evt.preventDefault();
-    //     });
-    // }
-
-    // if (section6) {
-    //     section6.addEventListener('wheel', evt => moveToSection(evt.deltaY < 0 ? 5 : 7));
-    //     section6.addEventListener('touchstart', (evt) => {
-    //         startY = evt.touches[0].clientY;
-    //     });
-    //     section6.addEventListener('touchmove', (evt) => {
-    //         const currentY = evt.touches[0].clientY;
-    //         const deltaY = startY - currentY;
-    //         if (deltaY < 0) {
-    //             moveToSection(5);
-    //         } else if (deltaY > 0) {
-    //             moveToSection(7);
-    //         }
-    //         evt.preventDefault();
-    //     });
-    // }
-
-    // if (section7) {
-    //     section7.addEventListener('wheel', evt => moveToSection(evt.deltaY < 0 ? 6 : 8));
-    //     section7.addEventListener('touchstart', (evt) => {
-    //         startY = evt.touches[0].clientY;
-    //     });
-    //     section7.addEventListener('touchmove', (evt) => {
-    //         const currentY = evt.touches[0].clientY;
-    //         const deltaY = startY - currentY;
-    //         if (deltaY < 0) {
-    //             moveToSection(6);
-    //         } else if (deltaY > 0) {
-    //             moveToSection(8);
-    //         }
-    //         evt.preventDefault();
-    //     });
-    // }
-
-    // if (section8) {
-    //     section8.addEventListener('wheel', evt => moveToSection(evt.deltaY < 0 ? 7 : 9));
-    //     section8.addEventListener('touchstart', (evt) => {
-    //         startY = evt.touches[0].clientY;
-    //     });
-    //     section8.addEventListener('touchmove', (evt) => {
-    //         const currentY = evt.touches[0].clientY;
-    //         const deltaY = startY - currentY;
-    //         if (deltaY < 0) {
-    //             moveToSection(7);
-    //         } else if (deltaY > 0) {
-    //             moveToSection(9);
-    //         }
-    //         evt.preventDefault();
-    //     });
-    // }
-
-    // if (section9) {
-    //     section9.addEventListener('wheel', evt => moveToSection(evt.deltaY < 0 ? 8 : 10));
-    //     section9.addEventListener('touchstart', (evt) => {
-    //         startY = evt.touches[0].clientY;
-    //     });
-    //     section9.addEventListener('touchmove', (evt) => {
-    //         const currentY = evt.touches[0].clientY;
-    //         const deltaY = startY - currentY;
-    //         if (deltaY < 0) {
-    //             moveToSection(8);
-    //         } else if (deltaY > 0) {
-    //             moveToSection(10);
-    //         }
-    //         evt.preventDefault();
-    //     });
-    // }
-
-    // if (section10) {
-    //     section10.addEventListener('wheel', evt => moveToSection(evt.deltaY < 0 ? 9 : 11));
-    //     section10.addEventListener('touchstart', (evt) => {
-    //         startY = evt.touches[0].clientY;
-    //     });
-    //     section10.addEventListener('touchmove', (evt) => {
-    //         const currentY = evt.touches[0].clientY;
-    //         const deltaY = startY - currentY;
-    //         if (deltaY < 0) {
-    //             moveToSection(9);
-    //         } else if (deltaY > 0) {
-    //             moveToSection(11);
-    //         }
-    //         evt.preventDefault();
-    //     });
-    // }
-
-    // if (section11) {
-    //     section11.addEventListener('wheel', evt => {
-    //         if (evt.deltaY < 0) {
-    //             moveToSection(10);
-    //         }
-    //     });
-    // }
-
-    // if (sectionAboutScreen4) {
-    //     sectionAboutScreen2.addEventListener('wheel', evt => moveToScreen(evt.deltaY < 0 ? 1 : 3));
-    //     sectionAboutScreen4.addEventListener('wheel', evt => moveToScreen(evt.deltaY < 0 ? 3 : 5));
-    //     sectionAboutScreen5.addEventListener('wheel', evt => moveToScreen(evt.deltaY < 0 ? 4 : 6));
-    //     sectionAboutScreen6.addEventListener('wheel', evt => moveToScreen(evt.deltaY < 0 ? 5 : 7));
-    //     sectionAboutScreen7.addEventListener('wheel', evt => moveToScreen(evt.deltaY < 0 ? 6 : 8));
-
-    //     // sectionAboutScreen8.addEventListener('wheel', evt => moveToScreen(evt.deltaY < 0 ? 7 : 9));
-    //     // sectionAboutScreen9.addEventListener('wheel', evt => moveToScreen(evt.deltaY < 0 ? 8 : 10));
-    // }
 }
 

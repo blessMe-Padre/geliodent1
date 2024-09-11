@@ -5663,6 +5663,7 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  background-color: var(--dark-blue);
 }
 
 .section {
